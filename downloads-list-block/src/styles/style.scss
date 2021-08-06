@@ -1,0 +1,52 @@
+.download-list-block {
+	max-width: 690px;
+	margin-bottom: 1.6em;
+
+	.far {
+		margin-right: 10px;
+	}
+}
+
+.download-list-block__list {
+	display: flex;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	flex-direction: column;
+}
+
+.download-list-block__link {
+	display: flex;
+	border-bottom: 1px solid #ccc;
+	margin-bottom: 20px;
+	padding-bottom: 20px;
+	text-decoration: none;
+
+	&:hover,
+	&:focus {
+		.download-list-block__filename {
+			text-decoration: underline;
+			text-underline-offset: 3px;
+		}
+	}
+
+	// a11y
+	&:focus {
+		outline: none;
+		box-shadow: 0 0 0 3px rgba(21, 156, 228, 0.4);
+	}
+}
+
+.download-list-block__content {
+	font-size: 1.2rem;
+	padding-top: 5px;
+}
+
+.download-list-block__filename {
+	display: inline-block;
+}
+
+.download-list-block__desc {
+	font-size: 1rem;
+	text-decoration: none;
+}
